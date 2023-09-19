@@ -10,6 +10,9 @@ echo "Movie1: Titolo: " . $movie1->title . ", " . "descrizione: " . $movie1->des
 echo "Movie2: Titolo: " . $movie2->title . ", " . "descrizione: " . $movie2->description . ", Lingua - " . $movie2->language . ", Data di uscita - " . $movie2->release_date->format('Y-m-d') . "\n";
 echo "Movie3: Titolo: " . $movie3->title . ", " . "descrizione: " . $movie3->description . ", Lingua - " . $movie3->language . ", Data di uscita - " . $movie3->release_date->format('Y-m-d') . "\n";
 
+
+$movies = array($movie1, $movie2, $movie3);
+
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +32,9 @@ echo "Movie3: Titolo: " . $movie3->title . ", " . "descrizione: " . $movie3->des
     </div>
   </header>
   <main>
-    <div class="container"></div>
+    <div class="container">
+  
+    </div>
   </main>
 </body>
 </html>
